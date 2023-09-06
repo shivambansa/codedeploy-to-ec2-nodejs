@@ -4,8 +4,7 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install', '-g', '@angular/cli@16.1.7']
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'build', '--', '--prod']
+
 
   # Step 2: Store the build artifacts in Cloud Storage
   - name: 'gcr.io/cloud-builders/gsutil'
